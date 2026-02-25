@@ -3,7 +3,9 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
 const { PurgeCSSPlugin } = require('purgecss-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 const glob = require('glob');
+const webpack = require('webpack');
 
 const isProd = process.env.NODE_ENV === 'production';
 const srcPath = path.join(__dirname, 'src');
@@ -28,6 +30,11 @@ module.exports = {
     hot: true,
     port: 8080,
     watchFiles: ['src/**/*'],
+  },
+  resolve: {
+    alias: {
+      jquery: path.resolve(__dirname, 'node_modules/jquery/dist/jquery.js'),
+    },
   },
   module: {
     rules: [
@@ -81,6 +88,11 @@ module.exports = {
     ],
   },
   plugins: [
+    new webpack.ProvidePlugin({
+      $: 'jquery',
+      jQuery: 'jquery',
+      'window.jQuery': 'jquery',
+    }),
     new HtmlWebpackPlugin({
       template: './src/index.html',
       filename: 'index.html',
@@ -91,6 +103,14 @@ module.exports = {
     }),
     new MiniCssExtractPlugin({
       filename: 'css/style.css',
+    }),
+    new CopyWebpackPlugin({
+      patterns: [
+        {
+          from: path.resolve(__dirname, 'src/img'),
+          to: path.resolve(__dirname, 'docs/img'),
+        },
+      ],
     }),
     ...(isProd
       ? [
@@ -117,7 +137,7 @@ module.exports = {
   ],
   ignoreWarnings: [
     {
-      module: /sass-loader/,   // ignorira warning iz sass-loadera
+      module: /sass-loader/,
       message: /@import rules are deprecated/,
     },
   ],
