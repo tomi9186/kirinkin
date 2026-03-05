@@ -10,6 +10,22 @@ const webpack = require('webpack');
 const isProd = process.env.NODE_ENV === 'production';
 const srcPath = path.join(__dirname, 'src');
 
+// Dinamički pronađi sve HTML datoteke u src/ direktoriju
+const getHtmlPlugins = () => {
+  const htmlFiles = glob.sync('./src/**/*.html');
+  return htmlFiles.map(file => {
+    const filename = path.relative('./src', file);
+    return new HtmlWebpackPlugin({
+      template: file,
+      filename: filename,
+      minify: isProd ? {
+        collapseWhitespace: true,
+        removeComments: true,
+      } : false,
+    });
+  });
+};
+
 module.exports = {
   mode: isProd ? 'production' : 'development',
   entry: {
@@ -93,14 +109,7 @@ module.exports = {
       jQuery: 'jquery',
       'window.jQuery': 'jquery',
     }),
-    new HtmlWebpackPlugin({
-      template: './src/index.html',
-      filename: 'index.html',
-      minify: isProd ? {
-        collapseWhitespace: true,
-        removeComments: true,
-      } : false,
-    }),
+    ...getHtmlPlugins(),
     new MiniCssExtractPlugin({
       filename: 'css/style.css',
     }),
