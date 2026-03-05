@@ -6,7 +6,7 @@
   <title>WP Slice Starter</title>
   <style type="text/css">
     img{
-      filter: grayscale(1);
+      
     }
   </style>
 </head>
@@ -103,119 +103,102 @@
     <!-- End Header Section -->
 
     <!-- Start Hero Section -->
-    <section>
-      <div class="cs_parallax_slider loading overflow-hidden position-relative">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <div class="cs_hero cs_style_1 cs_center text-center position-relative">
-              <figure class="cs_swiper_parallax_bg cs_hero_bg cs_bg_filed h-100 w-100 position-absolute top-0 start-0 mb-0 after-dark">
-                <img src="./img/vis-2.jpg" alt="" />
-              </figure>
-              <div class="container position-relative cs_zindex_3">
+    <section class="cs_hero cs_style_2 position-relative">
+      <div class="cs_hero_left_img cs_bg_filed" data-src="./img/palazo-kirinkin.webp"></div>
+      <div class="cs_hero_left_right cs_bg_filed" data-src="./img/hero_bg_4.png"></div>
+      <div class="cs_hero_in">
+        <div class="cs_hero_content cs_center">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-6"></div>
+              <div class="col-lg-6">
                 <div class="cs_hero_text">
-                  <p class="cs_hero_subtitle cs_white_color text-uppercase d-inline-flex position-relative cs_mb_25 cs_letter_spacing_1">
-                    <img class="cs_hero_subtitle_icon_1 position-absolute start-0" src="./img/icons/star.svg" alt="Star">            
-                    Authentic Spirit of Vis
-                    <img class="cs_hero_subtitle_icon_2 position-absolute end-0" src="./img/icons/star.svg" alt="Star">    
-                  </p>
-                  <h1 class="cs_hero_title cs_fs_89 cs_white_color mb-0">Welcome to <br>Palazzo Kirinkin</h1>
+                  <p class="cs_hero_subtitle cs_mb_28 cs_primary_color">A seaside oasis for tranquility and rejuvenation</p>
+                  <h1 class="cs_hero_title mb-0 cs_fs_89 wow fadeInRight" data-wow-duration="0.8s" data-wow-delay="0.2s">Welcome to Palazzo Kirinkin</h1>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <!-- If we need navigation buttons -->
-        <div class="cs_slider_navigation cs_white_color">
-          <div class="cs_swiper_button_prev">
-            <svg width="56" height="16" viewBox="0 0 56 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M0.292893 7.29289C-0.0976311 7.68342 -0.0976311 8.31658 0.292893 8.70711L6.65685 15.0711C7.04738 15.4616 7.68054 15.4616 8.07107 15.0711C8.46159 14.6805 8.46159 14.0474 8.07107 13.6569L2.41421 8L8.07107 2.34315C8.46159 1.95262 8.46159 1.31946 8.07107 0.928932C7.68054 0.538408 7.04738 0.538408 6.65685 0.928932L0.292893 7.29289ZM56 7L1 7V9L56 9V7Z" fill="currentColor"/>
-            </svg>            
+        <div class="cs_hero_form">
+          <div class="container">
+            <form action="search-result.html" class="cs_form cs_style_4 cs_accent_bg cs_radius_5 position-relative cs_zindex_10">
+              <div class="cs_date_items">
+                <input type="text" name="datetimes" class="cs_datetimes">
+                <div class="cs_form_item cs_date_item">
+                  <label class="cs_white_color">Check in :</label>
+                  <span class="cs_start_date cs_start_date_value cs_white_color">Start Date:</span>
+                </div>
+                <div class="cs_form_item cs_date_item">
+                  <label class="cs_white_color">Check out :</label>
+                  <span class="cs_end_date cs_end_date_value cs_white_color">End Date:</span>
+                </div>
+              </div>
+              <div class="cs_form_item">
+                <label class="cs_white_color">Rooms :</label>
+                <div class="cs_quantity_wrap">
+                  <span class="cs_quantity_btn" data-initial-number="1"></span>
+                  <div class="cs_quantity_dropdown cs_primary_color">
+                    <div class="cs_quantity_dropdown_item">
+                      <span class="cs_quantity_title">Rooms :</span>
+                      <div class="cs_count">
+                        <button class="cs_quantity_decrement cs_center" type="button">
+                          <i class="fa-solid fa-minus"></i>
+                        </button>
+                        <span class="cs_quantity_number" data-min-value="1" data-max-value="50"></span>
+                        <button class="cs_quantity_increment cs_center" type="button">
+                          <i class="fa-solid fa-plus"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="cs_form_item">
+                <label class="cs_white_color">Adults :</label>
+                <div class="cs_quantity_wrap">
+                  <span class="cs_quantity_btn" data-initial-number="1"></span>
+                  <div class="cs_quantity_dropdown cs_primary_color">
+                    <div class="cs_quantity_dropdown_item">
+                      <span class="cs_quantity_title">Adults :</span>
+                      <div class="cs_count">
+                        <button class="cs_quantity_decrement cs_center" type="button">
+                          <i class="fa-solid fa-minus"></i>
+                        </button>
+                        <span class="cs_quantity_number" data-min-value="1" data-max-value="30"></span>
+                        <button class="cs_quantity_increment cs_center" type="button">
+                          <i class="fa-solid fa-plus"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="cs_form_item cs_children_item">
+                <label class="cs_white_color">Children :</label>
+                <div class="cs_quantity_wrap">
+                  <span class="cs_quantity_btn" data-initial-number="00"></span>
+                  <div class="cs_quantity_dropdown cs_primary_color">
+                    <div class="cs_quantity_dropdown_item">
+                      <span class="cs_quantity_title">Children :</span>
+                      <div class="cs_count">
+                        <button class="cs_quantity_decrement cs_center" type="button">
+                          <i class="fa-solid fa-minus"></i>
+                        </button>
+                        <span class="cs_quantity_number" data-min-value="0" data-max-value="10"></span>
+                        <button class="cs_quantity_increment cs_center" type="button">
+                          <i class="fa-solid fa-plus"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="cs_form_item_btn">
+                <button class="cs_btn cs_style_1 cs_color_1 cs_fs_15 cs_medium cs_radius_5 w-100">Check Availability</button>
+              </div>
+            </form>
           </div>
-          <div class="cs_swiper_button_next">
-            <svg width="56" height="16" viewBox="0 0 56 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M55.7071 8.70711C56.0976 8.31659 56.0976 7.68342 55.7071 7.2929L49.3431 0.928937C48.9526 0.538412 48.3195 0.538412 47.9289 0.928936C47.5384 1.31946 47.5384 1.95263 47.9289 2.34315L53.5858 8L47.9289 13.6569C47.5384 14.0474 47.5384 14.6805 47.9289 15.0711C48.3195 15.4616 48.9526 15.4616 49.3431 15.0711L55.7071 8.70711ZM-8.74228e-08 9L55 9L55 7L8.74228e-08 7L-8.74228e-08 9Z" fill="currentColor"/>
-            </svg>          
-          </div>
-        </div>
-      </div>
-      <div class="cs_half_ternary_bg position-relative">
-        <div class="container">
-          <form action="search-result.html" class="cs_form cs_style_4 cs_accent_bg cs_radius_5 position-relative cs_zindex_10">
-            <div class="cs_date_items">
-              <input type="text" name="datetimes" class="cs_datetimes">
-              <div class="cs_form_item cs_date_item">
-                <label class="cs_white_color">Check in :</label>
-                <span class="cs_start_date cs_start_date_value cs_white_color">Start Date:</span>
-              </div>
-              <div class="cs_form_item cs_date_item">
-                <label class="cs_white_color">Check out :</label>
-                <span class="cs_end_date cs_end_date_value cs_white_color">End Date:</span>
-              </div>
-            </div>
-            <div class="cs_form_item">
-              <label class="cs_white_color">Rooms :</label>
-              <div class="cs_quantity_wrap">
-                <span class="cs_quantity_btn" data-initial-number="1"></span>
-                <div class="cs_quantity_dropdown cs_primary_color">
-                  <div class="cs_quantity_dropdown_item">
-                    <span class="cs_quantity_title">Rooms :</span>
-                    <div class="cs_count">
-                      <button class="cs_quantity_decrement cs_center" type="button">
-                        <i class="fa-solid fa-minus"></i>
-                      </button>
-                      <span class="cs_quantity_number" data-min-value="1" data-max-value="50"></span>
-                      <button class="cs_quantity_increment cs_center" type="button">
-                        <i class="fa-solid fa-plus"></i>
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="cs_form_item">
-              <label class="cs_white_color">Adults :</label>
-              <div class="cs_quantity_wrap">
-                <span class="cs_quantity_btn" data-initial-number="1"></span>
-                <div class="cs_quantity_dropdown cs_primary_color">
-                  <div class="cs_quantity_dropdown_item">
-                    <span class="cs_quantity_title">Adults :</span>
-                    <div class="cs_count">
-                      <button class="cs_quantity_decrement cs_center" type="button">
-                        <i class="fa-solid fa-minus"></i>
-                      </button>
-                      <span class="cs_quantity_number" data-min-value="1" data-max-value="30"></span>
-                      <button class="cs_quantity_increment cs_center" type="button">
-                        <i class="fa-solid fa-plus"></i>
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="cs_form_item cs_children_item">
-              <label class="cs_white_color">Children :</label>
-              <div class="cs_quantity_wrap">
-                <span class="cs_quantity_btn" data-initial-number="00"></span>
-                <div class="cs_quantity_dropdown cs_primary_color">
-                  <div class="cs_quantity_dropdown_item">
-                    <span class="cs_quantity_title">Children :</span>
-                    <div class="cs_count">
-                      <button class="cs_quantity_decrement cs_center" type="button">
-                        <i class="fa-solid fa-minus"></i>
-                      </button>
-                      <span class="cs_quantity_number" data-min-value="0" data-max-value="10"></span>
-                      <button class="cs_quantity_increment cs_center" type="button">
-                        <i class="fa-solid fa-plus"></i>
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="cs_form_item_btn">
-              <button class="cs_btn cs_style_1 cs_color_1 cs_fs_15 cs_medium cs_radius_5 w-100">Check Availability</button>
-            </div>
-          </form>
         </div>
       </div>
     </section>
