@@ -7,6 +7,13 @@
 </head>
 <body>
 
+  <style type="text/css">
+    .p-sticky-120{
+      position: sticky;
+      top: 120px;
+    }
+    </style>
+
   <!-- Start Preloader -->
    <!--
     <div class="cs_preloader cs_accent_color cs_primary_font">
@@ -15,14 +22,14 @@
   -->
      <!-- End Preloader -->
     <!-- Start Header Section -->
-    <header class="cs_site_header cs_style_1 cs_transparent_header cs_primary_color cs_sticky_header" style="background: var(--primary);">
+    <header class="cs_site_header cs_style_1 cs_transparent_header cs_primary_color cs_sticky_header">
       <div class="cs_main_header">
         <div class="container">
           <div class="cs_main_header_in">
 
             <div class="cs_main_header_left">
               <a class="cs_site_branding" href="index.html">
-                <svg fill="#FFFFFF" height="40px" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M12.691406 0L11.564453 2.3320312L9 2.6386719L10.949219 4.3613281L10.435547 7L12.691406 5.6816406L14.949219 7L14.435547 4.3613281L16.384766 2.6386719L13.820312 2.3320312L12.691406 0 z M 14.949219 7L10.435547 7L9.3007812 7C6.3307812 7 4 9.3307812 4 12.300781L4 45C4 45.55 4.45 46 5 46L22 46L22 36L28 36L28 46L45 46C45.55 46 46 45.55 46 45L46 12.300781C46 9.3307812 43.669219 7 40.699219 7L39.564453 7L35.050781 7L31.359375 7L26.845703 7L23.154297 7L18.640625 7L14.949219 7 z M 18.640625 7L20.896484 5.6816406L23.154297 7L22.640625 4.3613281L24.589844 2.6386719L22.025391 2.3320312L20.896484 0L19.769531 2.3320312L17.205078 2.6386719L19.154297 4.3613281L18.640625 7 z M 26.845703 7L29.103516 5.6816406L31.359375 7L30.845703 4.3613281L32.794922 2.6386719L30.230469 2.3320312L29.103516 0L27.974609 2.3320312L25.410156 2.6386719L27.359375 4.3613281L26.845703 7 z M 35.050781 7L37.308594 5.6816406L39.564453 7L39.050781 4.3613281L41 2.6386719L38.435547 2.3320312L37.308594 0L36.179688 2.3320312L33.615234 2.6386719L35.564453 4.3613281L35.050781 7 z M 10 12L16 12L16 16L10 16L10 12 z M 22 12L28 12L28 16L22 16L22 12 z M 34 12L40 12L40 16L34 16L34 12 z M 10 20L16 20L16 24L10 24L10 20 z M 22 20L28 20L28 24L22 24L22 20 z M 34 20L40 20L40 24L34 24L34 20 z M 10 28L16 28L16 32L10 32L10 28 z M 22 28L28 28L28 32L22 32L22 28 z M 34 28L40 28L40 32L34 32L34 28 z M 10 36L16 36L16 40L10 40L10 36 z M 34 36L40 36L40 40L34 40L34 36 z"/></svg>
+                <img src="./img/logow.webp" style="max-width: 200px;" alt="Logo" class="cs_logo_default">
               </a>
             </div>
 
@@ -48,10 +55,11 @@
                   <li class="menu-item-has-children">
                     <a href="accommodation.html">Accommodation</a>
                     <ul>
-                      <li><a href="suite-1.html">One-Bedroom Apartment</a></li>
-                      <li><a href="suite-2.html">One-Bedroom Apartment</a></li>
-                      <li><a href="suite-3.html">Deluxe Double Room</a></li>
-                      <li><a href="suite-4.html">Deluxe Double Room (+Child)</a></li>
+                      <li><a href="suite-1.html">Heritage room one</a></li>
+                      <li><a href="suite-2.html">Heritage Grand room two</a></li>
+                      <li><a href="suite-3.html">Heritage Grand Apartment</a></li>
+                      <li><a href="suite-4.html">Heritage Terrace Apartment</a></li>
+                      <li><a href="suite-4.html">Suits</a></li>
                     </ul>
                   </li>
 
@@ -98,7 +106,6 @@
     <!-- End Header Section -->
 
     <!-- Start Page Heading Section -->
-    <div class="cs_height_100 cs_height_lg_80"></div>
     <div class="position-relative cs_gallery_hover_show_nav">
       <div class="cs_gallery_slider_thumb_2 slick-slider">
         <div class="cs_gallery_slider_thumb_item_2 cs_bg_filed" data-src="./img/room1.webp"></div>
@@ -108,10 +115,11 @@
       <div class="cs_gallery_slider_nav_2_wrap">
         <div class="container position-relative cs_gallery_slider_nav_2_in">
           <div>
-            <h1 class="cs_white_color mb-0 cs_fs_67">Deluxe Rooms</h1>
+            <h1 class="cs_white_color mb-0 cs_fs_67">Heritage Grand room two</h1>
             <p class="cs_price mb-0 cs_white_color cs_fs_38">
-              <span class="cs_primary_font">$320.0</span> 
-              <span class="cs_price_per cs_fs_16">/Night</span>
+              <span class="cs_price_per cs_fs_16">from </span>
+              <span class="cs_primary_font">210 EUR</span> 
+              <span class="cs_price_per cs_fs_16">/ per night</span>
             </p>
           </div>
           <div class="cs_gallery_slider_nav_2 slick-slider">
@@ -135,287 +143,261 @@
     <!-- End Page Heading Section -->
 
     <!-- Start Room Details Section -->
-    <section>
-      <div class="cs_height_150 cs_height_lg_80"></div>
-      <div class="container">
-        <div class="cs_plr_70">
-          <h2 class="cs_fs_67 mb-0 text-center">Enjoy a cozy and well-appointed room, complete with breakfast and unlimited access to our thermal pools, Spa & Wellness facilities. Please note that extra beds are not available in this room category</h2>
-        </div>
-      </div>
-      <div class="cs_height_150 cs_height_lg_80"></div>
-      <div class="container">
-        <div class="row cs_gap_y_40">
-          <div class="col-lg-6">
-            <div class="cs_room_details">
-              <h3 class="cs_fs_38 cs_mb_29 cs_mb_lg_20">About Accommodation</h3>
-              <p class="cs_mb_49 cs_mb_lg_30">Relax in our cozy, compact room featuring a 140cm bed, satellite TV,  coffee and tea set, minibar, desk, air conditioning, and complimentary  Wi-Fi. Unwind in the bathroom with a shower, and find bathrobe and  slippers for added comfort. Our non-smoking rooms also include  SeaPearl's inclusive service, ensuring a delightful stay. Your  accommodation price covers breakfast and unrestricted entry to our  thermal pools and Wellness & Spa.</p>
-              <h3 class="cs_fs_31 cs_mb_29 cs_mb_lg_20">Facilities</h3>
-              <ul class="cs_list cs_style_3 cs_mp_0">
-                <li><img src="./img/icons/facility_icon_1.svg" alt="Icon">King size bed</li>
-                <li><img src="./img/icons/facility_icon_2.svg" alt="Icon">Personal Locker</li>
-                <li><img src="./img/icons/facility_icon_3.svg" alt="Icon">Desk</li>
-                <li><img src="./img/icons/facility_icon_4.svg" alt="Icon">Personal Locker</li>
-                <li><img src="./img/icons/facility_icon_5.svg" alt="Icon">Air Condition</li>
-                <li><img src="./img/icons/facility_icon_6.svg" alt="Icon">Minibar</li>
-                <li><img src="./img/icons/facility_icon_7.svg" alt="Icon">Coffee and tea</li>
-                <li><img src="./img/icons/facility_icon_8.svg" alt="Icon">Television</li>
-                <li><img src="./img/icons/facility_icon_9.svg" alt="Icon">Wi Fi</li>
-                <li><img src="./img/icons/facility_icon_10.svg" alt="Icon">Bathtub</li>
-                <li><img src="./img/icons/facility_icon_11.svg" alt="Icon">Breakfast</li>
-                <li><img src="./img/icons/facility_icon_12.svg" alt="Icon">24/7 Room service</li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-lg-6">
-            <div class="cs_pl_110">
-              <form action="complete-reservation.html" class="cs_book_now_card cs_accent_bg cs_radius_5">
-                <div class="cs_book_now_card_head cs_mb_30">
-                  <h2 class="cs_book_now_card_title cs_fs_38 cs_white_color mb-0 text-center">Reservation</h2>
-                  <h2 class="cs_book_now_card_price cs_fs_38 cs_white_color mb-0 text-center">$320<span class="cs_secondary_font cs_fs_21">/Night</span></h2>
-                </div>
-                <div class="cs_form cs_style_4 cs_type_7 cs_mb_35">
-                  <div class="cs_date_items">
-                    <input type="text" name="datetimes" class="cs_datetimes">
-                    <div class="cs_form_item cs_date_item">
-                      <label class="cs_white_color">Check in :</label>
-                      <span class="cs_start_date cs_start_date_value cs_white_color">Start Date:</span>
-                    </div>
-                    <div class="cs_form_item cs_date_item">
-                      <label class="cs_white_color">Check out :</label>
-                      <span class="cs_end_date cs_end_date_value cs_white_color">End Date:</span>
-                    </div>
-                  </div>
-                  <div class="cs_form_item">
-                    <label class="cs_white_color">Rooms :</label>
-                    <div class="cs_quantity_wrap">
-                      <span class="cs_quantity_btn" data-initial-number="1"></span>
-                      <div class="cs_quantity_dropdown cs_primary_color">
-                        <div class="cs_quantity_dropdown_item">
-                          <span class="cs_quantity_title">Rooms :</span>
-                          <div class="cs_count">
-                            <button class="cs_quantity_decrement cs_center" type="button">
-                              <i class="fa-solid fa-minus"></i>
-                            </button>
-                            <span class="cs_quantity_number" data-min-value="1" data-max-value="50"></span>
-                            <button class="cs_quantity_increment cs_center" type="button">
-                              <i class="fa-solid fa-plus"></i>
-                            </button>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="cs_form_item_group">
-                    <div class="cs_form_item">
-                      <label class="cs_white_color">Adults :</label>
-                      <div class="cs_quantity_wrap">
-                        <span class="cs_quantity_btn" data-initial-number="1"></span>
-                        <div class="cs_quantity_dropdown cs_primary_color">
-                          <div class="cs_quantity_dropdown_item">
-                            <span class="cs_quantity_title">Adults :</span>
-                            <div class="cs_count">
-                              <button class="cs_quantity_decrement cs_center" type="button">
-                                <i class="fa-solid fa-minus"></i>
-                              </button>
-                              <span class="cs_quantity_number" data-min-value="1" data-max-value="30"></span>
-                              <button class="cs_quantity_increment cs_center" type="button">
-                                <i class="fa-solid fa-plus"></i>
-                              </button>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="cs_form_item">
-                      <label class="cs_white_color">Children :</label>
-                      <div class="cs_quantity_wrap">
-                        <span class="cs_quantity_btn" data-initial-number="00"></span>
-                        <div class="cs_quantity_dropdown cs_primary_color">
-                          <div class="cs_quantity_dropdown_item">
-                            <span class="cs_quantity_title">Children :</span>
-                            <div class="cs_count">
-                              <button class="cs_quantity_decrement cs_center" type="button">
-                                <i class="fa-solid fa-minus"></i>
-                              </button>
-                              <span class="cs_quantity_number" data-min-value="0" data-max-value="10"></span>
-                              <button class="cs_quantity_increment cs_center" type="button">
-                                <i class="fa-solid fa-plus"></i>
-                              </button>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <h3 class="cs_fs_28 cs_white_color cs_mb_20">Extra Services</h3>
-                <div class="cs_extra_service_item_list cs_mb_35">
-                  <div class="cs_extra_service_item">
-                    <div class="cs_checkbox">
-                      <input type="checkbox">
-                      <label>Room Clean</label>
-                    </div>
-                    <div class="cs_extra_service_item_right">
-                      <span>$20 /Night</span>
-                    </div>
-                  </div>
-                  <div class="cs_extra_service_item">
-                    <div class="cs_checkbox">
-                      <input type="checkbox">
-                      <label>Wellness & Spa</label>
-                    </div>
-                    <div class="cs_extra_service_item_right">
-                      <span>$10 /Person</span>
-                      <div class="cs_form_item">
-                        <div class="cs_quantity_wrap">
-                          <span class="cs_quantity_btn" data-initial-number="1"></span>
-                          <div class="cs_quantity_dropdown cs_primary_color">
-                            <div class="cs_quantity_dropdown_item">
-                              <div class="cs_count">
-                                <button class="cs_quantity_decrement cs_center" type="button">
-                                  <i class="fa-solid fa-minus"></i>
-                                </button>
-                                <span class="cs_quantity_number" data-min-value="1" data-max-value="50"></span>
-                                <button class="cs_quantity_increment cs_center" type="button">
-                                  <i class="fa-solid fa-plus"></i>
-                                </button>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="cs_extra_service_item">
-                    <div class="cs_checkbox">
-                      <input type="checkbox">
-                      <label>Massage</label>
-                    </div>
-                    <div class="cs_extra_service_item_right">
-                      <span>$15 /Person</span>
-                      <div class="cs_form_item">
-                        <div class="cs_quantity_wrap">
-                          <span class="cs_quantity_btn" data-initial-number="1"></span>
-                          <div class="cs_quantity_dropdown cs_primary_color">
-                            <div class="cs_quantity_dropdown_item">
-                              <div class="cs_count">
-                                <button class="cs_quantity_decrement cs_center" type="button">
-                                  <i class="fa-solid fa-minus"></i>
-                                </button>
-                                <span class="cs_quantity_number" data-min-value="1" data-max-value="50"></span>
-                                <button class="cs_quantity_increment cs_center" type="button">
-                                  <i class="fa-solid fa-plus"></i>
-                                </button>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <button class="cs_btn cs_style_1 cs_color_1 cs_fs_15 cs_medium cs_radius_5 w-100">Book Room Now</button>
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- End Room Details Section -->
+<section>
+  <div class="cs_height_150 cs_height_lg_80"></div>
+  <div class="container">
+    <div class="cs_plr_70">
+      <h2 class="cs_fs_67 mb-0 text-center">
+        Enjoy a spacious 45 m² one-bedroom apartment with a fully equipped kitchen, private patio, and all modern amenities for a comfortable stay.
+      </h2>
+    </div>
+  </div>
 
-    <!-- Start Feature Section -->
+  <div class="cs_height_150 cs_height_lg_80"></div>
+
+  <div class="container">
+    <div class="row cs_gap_y_40">
+
+      <div class="col-lg-6">
+        <div class="cs_room_details">
+
+          <h3 class="cs_fs_38 cs_mb_29 cs_mb_lg_20">About Accommodation</h3>
+
+          <p class="cs_mb_49 cs_mb_lg_30">
+            Relax in this spacious 45 m² one-bedroom apartment designed to provide comfort and convenience during your stay. 
+            The apartment features a separate bedroom with a queen bed and a living room with a sofa bed, making it ideal 
+            for couples, families, or small groups.
+          </p>
+
+          <p class="cs_mb_49 cs_mb_lg_30">
+            Guests can enjoy a fully equipped private kitchen including a stovetop, oven, refrigerator, microwave, dishwasher, 
+            coffee machine, electric kettle, kitchenware, and a dining table. The apartment also includes a washing machine, 
+            making it perfect for longer stays.
+          </p>
+
+          <p class="cs_mb_49 cs_mb_lg_30">
+            The modern bathroom features a walk-in shower, fresh towels, and a hairdryer. Additional amenities include air 
+            conditioning, flat-screen TV, free Wi-Fi, and a private patio with outdoor furniture where guests can relax. 
+            The apartment also offers a private entrance and a comfortable seating area.
+          </p>
+
+          <h3 class="cs_fs_31 cs_mb_29 cs_mb_lg_20">Facilities</h3>
+
+          <ul class="cs_list cs_style_3 cs_mp_0">
+            <li><img src="./img/icons/facility_icon_1.svg" alt="Icon">Queen Bed</li>
+            <li><img src="./img/icons/facility_icon_2.svg" alt="Icon">Sofa Bed</li>
+            <li><img src="./img/icons/facility_icon_3.svg" alt="Icon">Private Kitchen</li>
+            <li><img src="./img/icons/facility_icon_4.svg" alt="Icon">Washing Machine</li>
+            <li><img src="./img/icons/facility_icon_5.svg" alt="Icon">Air Conditioning</li>
+            <li><img src="./img/icons/facility_icon_6.svg" alt="Icon">Dishwasher</li>
+            <li><img src="./img/icons/facility_icon_7.svg" alt="Icon">Coffee Machine</li>
+            <li><img src="./img/icons/facility_icon_8.svg" alt="Icon">Flat-Screen TV</li>
+            <li><img src="./img/icons/facility_icon_9.svg" alt="Icon">Free Wi-Fi</li>
+            <li><img src="./img/icons/facility_icon_10.svg" alt="Icon">Walk-in Shower</li>
+            <li><img src="./img/icons/facility_icon_11.svg" alt="Icon">Private Patio</li>
+            <li><img src="./img/icons/facility_icon_12.svg" alt="Icon">Dining Area</li>
+          </ul>
+
+        </div>
+      </div>
+
+
+      <div class="col-lg-6">
+        <div class="cs_pl_110 p-sticky-120">
+
+          <form action="complete-reservation.html" class="cs_book_now_card cs_accent_bg cs_radius_5">
+
+            <div class="cs_book_now_card_head cs_mb_30">
+              <h2 class="cs_book_now_card_title cs_fs_38 cs_white_color mb-0 text-center">
+                Book Your Stay
+              </h2>
+            </div>
+
+
+            <div class="cs_form cs_style_4 cs_type_7 cs_mb_35">
+
+              <div class="cs_date_items">
+                <input type="text" name="datetimes" class="cs_datetimes">
+
+                <div class="cs_form_item cs_date_item">
+                  <label class="cs_white_color">Check in :</label>
+                  <span class="cs_start_date cs_start_date_value cs_white_color">Start Date</span>
+                </div>
+
+                <div class="cs_form_item cs_date_item">
+                  <label class="cs_white_color">Check out :</label>
+                  <span class="cs_end_date cs_end_date_value cs_white_color">End Date</span>
+                </div>
+              </div>
+
+
+              <div class="cs_form_item">
+                <label class="cs_white_color">Guests :</label>
+
+                <div class="cs_quantity_wrap">
+
+                  <span class="cs_quantity_btn" data-initial-number="2"></span>
+
+                  <div class="cs_quantity_dropdown cs_primary_color">
+                    <div class="cs_quantity_dropdown_item">
+
+                      <span class="cs_quantity_title">Guests :</span>
+
+                      <div class="cs_count">
+                        <button class="cs_quantity_decrement cs_center" type="button">
+                          <i class="fa-solid fa-minus"></i>
+                        </button>
+
+                        <span class="cs_quantity_number" data-min-value="1" data-max-value="4"></span>
+
+                        <button class="cs_quantity_increment cs_center" type="button">
+                          <i class="fa-solid fa-plus"></i>
+                        </button>
+                      </div>
+
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+
+            <button class="cs_btn cs_style_1 cs_color_1 cs_fs_15 cs_medium cs_radius_5 w-100">
+              Book Apartment Now
+            </button>
+
+          </form>
+
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+
+</section>
+<!-- End Room Details Section -->
+
+<section>
+  <div class="cs_height_141 cs_height_lg_75"></div>
+
+  <div class="container">
+    <div class="cs_section_heading cs_style_1 text-center">
+      <p class="cs_section_subtitle cs_medium cs_letter_spacing_1 cs_mb_28 cs_mb_lg_15 text-uppercase">
+        Why Choose Apartment Kirinkin?
+      </p>
+
+      <h2 class="cs_fs_67 mb-0">
+        Comfort, Location & Authentic <br>
+        Island Experience in Vis
+      </h2>
+    </div>
+
+    <div class="cs_height_80 cs_height_lg_50"></div>
+  </div>
+
+  <div class="container">
+    <div class="row cs_row_gap_50 cs_gap_y_75">
+
+      <div class="col-lg-4 col-md-6">
+        <div class="cs_iconbox cs_style_1">
+          <div class="cs_iconbox_icon cs_mb_29">
+            <img src="./img/icons/star.svg" alt="Icon">
+          </div>
+          <h3 class="cs_iconbox_title cs_mb_19 cs_fs_38">Comfortable Apartment</h3>
+          <p class="cs_iconbox_subtitle mb-0">
+            Enjoy a spacious one-bedroom apartment with a separate living room, air-conditioning, a washing machine, and a fully equipped kitchen designed for a relaxing and independent stay.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6">
+        <div class="cs_iconbox cs_style_1">
+          <div class="cs_iconbox_icon cs_mb_29">
+            <img src="./img/icons/star.svg" alt="Icon">
+          </div>
+          <h3 class="cs_iconbox_title cs_mb_19 cs_fs_38">Excellent Location</h3>
+          <p class="cs_iconbox_subtitle mb-0">
+            Located just a 5-minute walk from Beach Vagan and close to Srebrna Bay, the apartment offers easy access to some of the most beautiful beaches and coastal views on the island of Vis.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6">
+        <div class="cs_iconbox cs_style_1">
+          <div class="cs_iconbox_icon cs_mb_29">
+            <img src="./img/icons/star.svg" alt="Icon">
+          </div>
+          <h3 class="cs_iconbox_title cs_mb_19 cs_fs_38">Free Wi-Fi & Modern Amenities</h3>
+          <p class="cs_iconbox_subtitle mb-0">
+            Stay connected with free high-speed Wi-Fi while enjoying modern comforts including air conditioning, a fully equipped kitchen, outdoor seating, and entertainment options.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6">
+        <div class="cs_iconbox cs_style_1">
+          <div class="cs_iconbox_icon cs_mb_29">
+            <img src="./img/icons/star.svg" alt="Icon">
+          </div>
+          <h3 class="cs_iconbox_title cs_mb_19 cs_fs_38">Leisure Activities</h3>
+          <p class="cs_iconbox_subtitle mb-0">
+            Guests can enjoy nearby activities such as tennis, fishing, hiking, cycling, and guided walking tours – perfect for exploring the natural beauty of Vis.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6">
+        <div class="cs_iconbox cs_style_1">
+          <div class="cs_iconbox_icon cs_mb_29">
+            <img src="./img/icons/star.svg" alt="Icon">
+          </div>
+          <h3 class="cs_iconbox_title cs_mb_19 cs_fs_38">Shuttle Service</h3>
+          <p class="cs_iconbox_subtitle mb-0">
+            A convenient paid shuttle service is available for guests, making transfers to nearby locations and transport hubs easy and stress-free.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6">
+        <div class="cs_iconbox cs_style_1">
+          <div class="cs_iconbox_icon cs_mb_29">
+            <img src="./img/icons/star.svg" alt="Icon">
+          </div>
+          <h3 class="cs_iconbox_title cs_mb_19 cs_fs_38">Loved by Couples</h3>
+          <p class="cs_iconbox_subtitle mb-0">
+            Couples particularly love the location and atmosphere of the apartment, giving it an excellent rating of 9.7 for a two-person trip.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- Start Rooms Section -->
     <section>
       <div class="cs_height_141 cs_height_lg_75"></div>
       <div class="container">
         <div class="cs_section_heading cs_style_1 text-center">
-          <p class="cs_section_subtitle cs_medium cs_letter_spacing_1 cs_mb_28 cs_mb_lg_15 text-uppercase">Why CHOOSE SEAPEARL?</p>
-          <h2 class="cs_fs_67 mb-0"> Unveiling Unmatched Coastal <br>Luxury and Hospitality</h2>
+          <p class="cs_section_subtitle cs_medium cs_letter_spacing_1 cs_mb_28 cs_mb_lg_15 text-uppercase">Palazzo Kirinkin</p>
+          <h2 class="cs_fs_67 mb-0 wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.2s">Other Accommodation</h2>  
         </div>
         <div class="cs_height_80 cs_height_lg_50"></div>
       </div>
-      <div class="container">
-        <div class="row cs_row_gap_50 cs_gap_y_75">
-          <div class="col-lg-4 col-md-6">
-            <div class="cs_iconbox cs_style_1">
-              <div class="cs_iconbox_icon cs_mb_29"><img src="./img/icons/restaurant.svg" alt="Icon"></div>
-              <h3 class="cs_iconbox_title cs_mb_19 cs_fs_38">Restaurant &amp; Bar</h3>
-              <p class="cs_iconbox_subtitle mb-0">Exceptional dining awaits at our resort. Immerse yourself in exquisite  flavors with view to match. Pure indulgence, effortlessly delivered.</p>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6">
-            <div class="cs_iconbox cs_style_1">
-              <div class="cs_iconbox_icon cs_mb_29"><img src="./img/icons/massage.svg" alt="Icon"></div>
-              <h3 class="cs_iconbox_title cs_mb_19 cs_fs_38">Spa &amp; Wellness</h3>
-              <p class="cs_iconbox_subtitle mb-0">Discover serenity at our spa. Indulge in blissful treatments and unwind  in a haven of relaxation. Your path to rejuvenation starts here</p>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6">
-            <div class="cs_iconbox cs_style_1">
-              <div class="cs_iconbox_icon cs_mb_29"><img src="./img/icons/gym.svg" alt="Icon"></div>
-              <h3 class="cs_iconbox_title cs_mb_19 cs_fs_38">Fitness Center</h3>
-              <p class="cs_iconbox_subtitle mb-0">Exceptional dining awaits at our resort. Immerse yourself in exquisite  flavors with view to match. Pure indulgence, effortlessly delivered.</p>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6">
-            <div class="cs_iconbox cs_style_1">
-              <div class="cs_iconbox_icon cs_mb_29"><img src="./img/icons/briefcase.svg" alt="Icon"></div>
-              <h3 class="cs_iconbox_title cs_mb_19 cs_fs_38">Conference Center</h3>
-              <p class="cs_iconbox_subtitle mb-0">Stay productive with our well-equipped business event center, offering essential services for business travelers.</p>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6">
-            <div class="cs_iconbox cs_style_1">
-              <div class="cs_iconbox_icon cs_mb_29"><img src="./img/icons/dryer.svg" alt="Icon"></div>
-              <h3 class="cs_iconbox_title cs_mb_19 cs_fs_38">Laundry Services</h3>
-              <p class="cs_iconbox_subtitle mb-0">Delight in the convenience of round-the-clock room service, catering, Laundry everything to your needs at any hour.</p>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6">
-            <div class="cs_iconbox cs_style_1">
-              <div class="cs_iconbox_icon cs_mb_29"><img src="./img/icons/room-service.svg" alt="Icon"></div>
-              <h3 class="cs_iconbox_title cs_mb_19 cs_fs_38">24/7 Room Service</h3>
-              <p class="cs_iconbox_subtitle mb-0">Delight in the convenience of round-the-clock room service, catering, Laundry everything to your needs at any hour.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- End Feature Section -->
-
-    <!-- Start Related Rooms Section -->
-    <section>
-      <div class="cs_height_140 cs_height_lg_70"></div>
-      <div class="container">
-        <div class="cs_section_heading cs_style_1 text-center">
-          <h2 class="cs_fs_67 mb-0">Other Rooms</h2>
-        </div>
-        <div class="cs_height_80 cs_height_lg_50"></div>
-      </div>
-      <div class="cs_slider cs_style_1 cs_slider_gap_24 cs_hover_show_arrows">
-        <div class="container">
+      <div class="container-fluid">
+        <div class="cs_slider cs_style_1 cs_slider_gap_40 cs_hover_show_arrows">
           <div class="cs_slider_container" data-autoplay="0" data-loop="1" data-speed="600" data-center="0" data-variable-width="0" data-slides-per-view="responsive" data-xs-slides="1" data-sm-slides="2" data-md-slides="2" data-lg-slides="3" data-add-slides="3">
             <div class="cs_slider_wrapper">
               <div class="cs_slide">
-                <div class="cs_card cs_style_7 cs_radius_5 overflow-hidden">
-                  <a href="room-details.html" class="cs_card_thumb d-block overflow-hidden position-relative cs_primary_bg">
-                    <img src="./img/room_4.jpeg" alt="Room">
-                    <span class="cs_card_btn position-absolute cs_zindex_2">
-                      <span class="cs_btn cs_style_2 cs_accent_btn cs_medium cs_radius_5 cs_fs_15">
-                        <b>Details View</b>
-                        <span>
-                          <i>
-                            <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-                              <path d="M9.00431 0.872828C9.00431 0.458614 8.66852 0.122828 8.25431 0.122828L1.50431 0.122827C1.0901 0.122827 0.754309 0.458614 0.754309 0.872828C0.754309 1.28704 1.0901 1.62283 1.50431 1.62283H7.50431V7.62283C7.50431 8.03704 7.84009 8.37283 8.25431 8.37283C8.66852 8.37283 9.00431 8.03704 9.00431 7.62283L9.00431 0.872828ZM1.53033 8.65747L8.78464 1.40316L7.72398 0.342497L0.46967 7.59681L1.53033 8.65747Z" fill="currentColor"></path>
-                            </svg>                                        
-                          </i>
-                          <i>
-                            <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-                              <path d="M9.00431 0.872828C9.00431 0.458614 8.66852 0.122828 8.25431 0.122828L1.50431 0.122827C1.0901 0.122827 0.754309 0.458614 0.754309 0.872828C0.754309 1.28704 1.0901 1.62283 1.50431 1.62283H7.50431V7.62283C7.50431 8.03704 7.84009 8.37283 8.25431 8.37283C8.66852 8.37283 9.00431 8.03704 9.00431 7.62283L9.00431 0.872828ZM1.53033 8.65747L8.78464 1.40316L7.72398 0.342497L0.46967 7.59681L1.53033 8.65747Z" fill="currentColor"></path>
-                            </svg>                   
-                          </i>
-                        </span>
-                      </span>
-                    </span>
+                <div class="cs_card cs_style_1">
+                  <a href="room-details.html" class="cs_card_thumb d-block cs_radius_5 overflow-hidden position-relative cs_primary_bg">
+                    <img src="./img/room1.webp" alt="Room">
+                    <img src="./img/room1.webp" alt="Room">
                   </a>
                   <div class="cs_card_info position-relative">
                     <h2 class="cs_card_title cs_fs_50 cs_mb_4"><a href="room-details.html">Deluxe Room</a></h2>
@@ -428,30 +410,17 @@
                       <li>3-5 Guests</li>
                       <li>Free Wi-Fi</li>
                     </ul>
+                    <a href="room-details.html" class="cs_card_btn cs_center">
+                      <i class="fa-solid fa-chevron-right"></i>
+                    </a>
                   </div>
                 </div>
               </div>
               <div class="cs_slide">
-                <div class="cs_card cs_style_7 cs_radius_5 overflow-hidden">
-                  <a href="room-details.html" class="cs_card_thumb d-block overflow-hidden position-relative cs_primary_bg">
-                    <img src="./img/room_5.jpeg" alt="Room">
-                    <span class="cs_card_btn position-absolute cs_zindex_2">
-                      <span class="cs_btn cs_style_2 cs_accent_btn cs_medium cs_radius_5 cs_fs_15">
-                        <b>Details View</b>
-                        <span>
-                          <i>
-                            <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-                              <path d="M9.00431 0.872828C9.00431 0.458614 8.66852 0.122828 8.25431 0.122828L1.50431 0.122827C1.0901 0.122827 0.754309 0.458614 0.754309 0.872828C0.754309 1.28704 1.0901 1.62283 1.50431 1.62283H7.50431V7.62283C7.50431 8.03704 7.84009 8.37283 8.25431 8.37283C8.66852 8.37283 9.00431 8.03704 9.00431 7.62283L9.00431 0.872828ZM1.53033 8.65747L8.78464 1.40316L7.72398 0.342497L0.46967 7.59681L1.53033 8.65747Z" fill="currentColor"></path>
-                            </svg>                                        
-                          </i>
-                          <i>
-                            <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-                              <path d="M9.00431 0.872828C9.00431 0.458614 8.66852 0.122828 8.25431 0.122828L1.50431 0.122827C1.0901 0.122827 0.754309 0.458614 0.754309 0.872828C0.754309 1.28704 1.0901 1.62283 1.50431 1.62283H7.50431V7.62283C7.50431 8.03704 7.84009 8.37283 8.25431 8.37283C8.66852 8.37283 9.00431 8.03704 9.00431 7.62283L9.00431 0.872828ZM1.53033 8.65747L8.78464 1.40316L7.72398 0.342497L0.46967 7.59681L1.53033 8.65747Z" fill="currentColor"></path>
-                            </svg>                   
-                          </i>
-                        </span>
-                      </span>
-                    </span>
+                <div class="cs_card cs_style_1">
+                  <a href="room-details.html" class="cs_card_thumb d-block cs_radius_5 overflow-hidden position-relative cs_primary_bg">
+                    <img src="./img/room2.webp" alt="Room">
+                    <img src="./img/room2.webp" alt="Room">
                   </a>
                   <div class="cs_card_info position-relative">
                     <h2 class="cs_card_title cs_fs_50 cs_mb_4"><a href="room-details.html">Standard Room</a></h2>
@@ -464,30 +433,17 @@
                       <li>3-5 Guests</li>
                       <li>Free Wi-Fi</li>
                     </ul>
+                    <a href="room-details.html" class="cs_card_btn cs_center">
+                      <i class="fa-solid fa-chevron-right"></i>
+                    </a>
                   </div>
                 </div>
               </div>
               <div class="cs_slide">
-                <div class="cs_card cs_style_7 cs_radius_5 overflow-hidden">
-                  <a href="room-details.html" class="cs_card_thumb d-block overflow-hidden position-relative cs_primary_bg">
-                    <img src="./img/room_6.jpeg" alt="Room">
-                    <span class="cs_card_btn position-absolute cs_zindex_2">
-                      <span class="cs_btn cs_style_2 cs_accent_btn cs_medium cs_radius_5 cs_fs_15">
-                        <b>Details View</b>
-                        <span>
-                          <i>
-                            <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-                              <path d="M9.00431 0.872828C9.00431 0.458614 8.66852 0.122828 8.25431 0.122828L1.50431 0.122827C1.0901 0.122827 0.754309 0.458614 0.754309 0.872828C0.754309 1.28704 1.0901 1.62283 1.50431 1.62283H7.50431V7.62283C7.50431 8.03704 7.84009 8.37283 8.25431 8.37283C8.66852 8.37283 9.00431 8.03704 9.00431 7.62283L9.00431 0.872828ZM1.53033 8.65747L8.78464 1.40316L7.72398 0.342497L0.46967 7.59681L1.53033 8.65747Z" fill="currentColor"></path>
-                            </svg>                                        
-                          </i>
-                          <i>
-                            <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-                              <path d="M9.00431 0.872828C9.00431 0.458614 8.66852 0.122828 8.25431 0.122828L1.50431 0.122827C1.0901 0.122827 0.754309 0.458614 0.754309 0.872828C0.754309 1.28704 1.0901 1.62283 1.50431 1.62283H7.50431V7.62283C7.50431 8.03704 7.84009 8.37283 8.25431 8.37283C8.66852 8.37283 9.00431 8.03704 9.00431 7.62283L9.00431 0.872828ZM1.53033 8.65747L8.78464 1.40316L7.72398 0.342497L0.46967 7.59681L1.53033 8.65747Z" fill="currentColor"></path>
-                            </svg>                   
-                          </i>
-                        </span>
-                      </span>
-                    </span>
+                <div class="cs_card cs_style_1">
+                  <a href="room-details.html" class="cs_card_thumb d-block cs_radius_5 overflow-hidden position-relative cs_primary_bg">
+                    <img src="./img/room3.webp" alt="Room">
+                    <img src="./img/room3.webp" alt="Room">
                   </a>
                   <div class="cs_card_info position-relative">
                     <h2 class="cs_card_title cs_fs_50 cs_mb_4"><a href="room-details.html">Superior Room</a></h2>
@@ -500,33 +456,20 @@
                       <li>3-5 Guests</li>
                       <li>Free Wi-Fi</li>
                     </ul>
+                    <a href="room-details.html" class="cs_card_btn cs_center">
+                      <i class="fa-solid fa-chevron-right"></i>
+                    </a>
                   </div>
                 </div>
               </div>
               <div class="cs_slide">
-                <div class="cs_card cs_style_7 cs_radius_5 overflow-hidden">
-                  <a href="room-details.html" class="cs_card_thumb d-block overflow-hidden position-relative cs_primary_bg">
-                    <img src="./img/room_22.jpeg" alt="Room">
-                    <span class="cs_card_btn position-absolute cs_zindex_2">
-                      <span class="cs_btn cs_style_2 cs_accent_btn cs_medium cs_radius_5 cs_fs_15">
-                        <b>Details View</b>
-                        <span>
-                          <i>
-                            <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-                              <path d="M9.00431 0.872828C9.00431 0.458614 8.66852 0.122828 8.25431 0.122828L1.50431 0.122827C1.0901 0.122827 0.754309 0.458614 0.754309 0.872828C0.754309 1.28704 1.0901 1.62283 1.50431 1.62283H7.50431V7.62283C7.50431 8.03704 7.84009 8.37283 8.25431 8.37283C8.66852 8.37283 9.00431 8.03704 9.00431 7.62283L9.00431 0.872828ZM1.53033 8.65747L8.78464 1.40316L7.72398 0.342497L0.46967 7.59681L1.53033 8.65747Z" fill="currentColor"></path>
-                            </svg>                                        
-                          </i>
-                          <i>
-                            <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-                              <path d="M9.00431 0.872828C9.00431 0.458614 8.66852 0.122828 8.25431 0.122828L1.50431 0.122827C1.0901 0.122827 0.754309 0.458614 0.754309 0.872828C0.754309 1.28704 1.0901 1.62283 1.50431 1.62283H7.50431V7.62283C7.50431 8.03704 7.84009 8.37283 8.25431 8.37283C8.66852 8.37283 9.00431 8.03704 9.00431 7.62283L9.00431 0.872828ZM1.53033 8.65747L8.78464 1.40316L7.72398 0.342497L0.46967 7.59681L1.53033 8.65747Z" fill="currentColor"></path>
-                            </svg>                   
-                          </i>
-                        </span>
-                      </span>
-                    </span>
+                <div class="cs_card cs_style_1">
+                  <a href="room-details.html" class="cs_card_thumb d-block cs_radius_5 overflow-hidden position-relative cs_primary_bg">
+                    <img src="./img/room4.webp" alt="Room">
+                    <img src="./img/room4.webp" alt="Room">
                   </a>
                   <div class="cs_card_info position-relative">
-                    <h2 class="cs_card_title cs_fs_50 cs_mb_4"><a href="room-details.html">Pearl Suite</a></h2>
+                    <h2 class="cs_card_title cs_fs_50 cs_mb_4"><a href="room-details.html">Deluxe Room</a></h2>
                     <div class="cs_card_price cs_mb_17">
                       <span class="cs_primary_color">From</span>
                       <span class="cs_accent_color cs_fs_38 cs_primary_font">$320/Night</span>
@@ -536,33 +479,20 @@
                       <li>3-5 Guests</li>
                       <li>Free Wi-Fi</li>
                     </ul>
+                    <a href="room-details.html" class="cs_card_btn cs_center">
+                      <i class="fa-solid fa-chevron-right"></i>
+                    </a>
                   </div>
                 </div>
               </div>
               <div class="cs_slide">
-                <div class="cs_card cs_style_7 cs_radius_5 overflow-hidden">
-                  <a href="room-details.html" class="cs_card_thumb d-block overflow-hidden position-relative cs_primary_bg">
-                    <img src="./img/room_23.jpeg" alt="Room">
-                    <span class="cs_card_btn position-absolute cs_zindex_2">
-                      <span class="cs_btn cs_style_2 cs_accent_btn cs_medium cs_radius_5 cs_fs_15">
-                        <b>Details View</b>
-                        <span>
-                          <i>
-                            <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-                              <path d="M9.00431 0.872828C9.00431 0.458614 8.66852 0.122828 8.25431 0.122828L1.50431 0.122827C1.0901 0.122827 0.754309 0.458614 0.754309 0.872828C0.754309 1.28704 1.0901 1.62283 1.50431 1.62283H7.50431V7.62283C7.50431 8.03704 7.84009 8.37283 8.25431 8.37283C8.66852 8.37283 9.00431 8.03704 9.00431 7.62283L9.00431 0.872828ZM1.53033 8.65747L8.78464 1.40316L7.72398 0.342497L0.46967 7.59681L1.53033 8.65747Z" fill="currentColor"></path>
-                            </svg>                                        
-                          </i>
-                          <i>
-                            <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-                              <path d="M9.00431 0.872828C9.00431 0.458614 8.66852 0.122828 8.25431 0.122828L1.50431 0.122827C1.0901 0.122827 0.754309 0.458614 0.754309 0.872828C0.754309 1.28704 1.0901 1.62283 1.50431 1.62283H7.50431V7.62283C7.50431 8.03704 7.84009 8.37283 8.25431 8.37283C8.66852 8.37283 9.00431 8.03704 9.00431 7.62283L9.00431 0.872828ZM1.53033 8.65747L8.78464 1.40316L7.72398 0.342497L0.46967 7.59681L1.53033 8.65747Z" fill="currentColor"></path>
-                            </svg>                   
-                          </i>
-                        </span>
-                      </span>
-                    </span>
+                <div class="cs_card cs_style_1">
+                  <a href="room-details.html" class="cs_card_thumb d-block cs_radius_5 overflow-hidden position-relative cs_primary_bg">
+                    <img src="./img/room5.webp" alt="Room">
+                    <img src="./img/room5.webp" alt="Room">
                   </a>
                   <div class="cs_card_info position-relative">
-                    <h2 class="cs_card_title cs_fs_50 cs_mb_4"><a href="room-details.html">Sunrise Villa</a></h2>
+                    <h2 class="cs_card_title cs_fs_50 cs_mb_4"><a href="room-details.html">Standard Room</a></h2>
                     <div class="cs_card_price cs_mb_17">
                       <span class="cs_primary_color">From</span>
                       <span class="cs_accent_color cs_fs_38 cs_primary_font">$450/Night</span>
@@ -572,33 +502,20 @@
                       <li>3-5 Guests</li>
                       <li>Free Wi-Fi</li>
                     </ul>
+                    <a href="room-details.html" class="cs_card_btn cs_center">
+                      <i class="fa-solid fa-chevron-right"></i>
+                    </a>
                   </div>
                 </div>
               </div>
               <div class="cs_slide">
-                <div class="cs_card cs_style_7 cs_radius_5 overflow-hidden">
-                  <a href="room-details.html" class="cs_card_thumb d-block overflow-hidden position-relative cs_primary_bg">
-                    <img src="./img/room_24.jpeg" alt="Room">
-                    <span class="cs_card_btn position-absolute cs_zindex_2">
-                      <span class="cs_btn cs_style_2 cs_accent_btn cs_medium cs_radius_5 cs_fs_15">
-                        <b>Details View</b>
-                        <span>
-                          <i>
-                            <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-                              <path d="M9.00431 0.872828C9.00431 0.458614 8.66852 0.122828 8.25431 0.122828L1.50431 0.122827C1.0901 0.122827 0.754309 0.458614 0.754309 0.872828C0.754309 1.28704 1.0901 1.62283 1.50431 1.62283H7.50431V7.62283C7.50431 8.03704 7.84009 8.37283 8.25431 8.37283C8.66852 8.37283 9.00431 8.03704 9.00431 7.62283L9.00431 0.872828ZM1.53033 8.65747L8.78464 1.40316L7.72398 0.342497L0.46967 7.59681L1.53033 8.65747Z" fill="currentColor"></path>
-                            </svg>                                        
-                          </i>
-                          <i>
-                            <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-                              <path d="M9.00431 0.872828C9.00431 0.458614 8.66852 0.122828 8.25431 0.122828L1.50431 0.122827C1.0901 0.122827 0.754309 0.458614 0.754309 0.872828C0.754309 1.28704 1.0901 1.62283 1.50431 1.62283H7.50431V7.62283C7.50431 8.03704 7.84009 8.37283 8.25431 8.37283C8.66852 8.37283 9.00431 8.03704 9.00431 7.62283L9.00431 0.872828ZM1.53033 8.65747L8.78464 1.40316L7.72398 0.342497L0.46967 7.59681L1.53033 8.65747Z" fill="currentColor"></path>
-                            </svg>                   
-                          </i>
-                        </span>
-                      </span>
-                    </span>
+                <div class="cs_card cs_style_1">
+                  <a href="room-details.html" class="cs_card_thumb d-block cs_radius_5 overflow-hidden position-relative cs_primary_bg">
+                    <img src="./img/room_3.jpeg" alt="Room">
+                    <img src="./img/room_3.jpeg" alt="Room">
                   </a>
                   <div class="cs_card_info position-relative">
-                    <h2 class="cs_card_title cs_fs_50 cs_mb_4"><a href="room-details.html">Sea View</a></h2>
+                    <h2 class="cs_card_title cs_fs_50 cs_mb_4"><a href="room-details.html">Superior Room</a></h2>
                     <div class="cs_card_price cs_mb_17">
                       <span class="cs_primary_color">From</span>
                       <span class="cs_accent_color cs_fs_38 cs_primary_font">$520/Night</span>
@@ -608,29 +525,32 @@
                       <li>3-5 Guests</li>
                       <li>Free Wi-Fi</li>
                     </ul>
+                    <a href="room-details.html" class="cs_card_btn cs_center">
+                      <i class="fa-solid fa-chevron-right"></i>
+                    </a>
                   </div>
                 </div>
               </div>
             </div>
           </div>
+          <div class="cs_slider_arrows cs_style_1 cs_mobile_hide">
+            <div class="cs_left_arrow cs_center cs_primary_color">
+              <svg width="22" height="16" viewBox="0 0 22 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0.292892 7.29289C-0.0976315 7.68342 -0.0976315 8.31658 0.292892 8.70711L6.65685 15.0711C7.04738 15.4616 7.68054 15.4616 8.07107 15.0711C8.46159 14.6805 8.46159 14.0474 8.07107 13.6569L2.41421 8L8.07107 2.34315C8.46159 1.95262 8.46159 1.31946 8.07107 0.928932C7.68054 0.538408 7.04738 0.538408 6.65685 0.928932L0.292892 7.29289ZM22 7L1 7V9L22 9V7Z" fill="currentColor"/>
+              </svg>                                
+            </div>
+            <div class="cs_right_arrow cs_center cs_primary_color">
+              <svg width="22" height="16" viewBox="0 0 22 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M21.7071 8.70711C22.0976 8.31658 22.0976 7.68342 21.7071 7.29289L15.3431 0.928932C14.9526 0.538408 14.3195 0.538408 13.9289 0.928932C13.5384 1.31946 13.5384 1.95262 13.9289 2.34315L19.5858 8L13.9289 13.6569C13.5384 14.0474 13.5384 14.6805 13.9289 15.0711C14.3195 15.4616 14.9526 15.4616 15.3431 15.0711L21.7071 8.70711ZM0 9H21V7H0L0 9Z" fill="currentColor"/>
+              </svg>
+            </div>
+          </div>
           <div class="cs_pagination cs_style_1 cs_mobile_show"></div>
         </div>
-        <div class="cs_slider_arrows cs_style_2 cs_mobile_hide">
-          <div class="cs_left_arrow slick-arrow">
-            <svg width="56" height="16" viewBox="0 0 56 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M0.292893 7.29289C-0.0976311 7.68342 -0.0976311 8.31658 0.292893 8.70711L6.65685 15.0711C7.04738 15.4616 7.68054 15.4616 8.07107 15.0711C8.46159 14.6805 8.46159 14.0474 8.07107 13.6569L2.41421 8L8.07107 2.34315C8.46159 1.95262 8.46159 1.31946 8.07107 0.928932C7.68054 0.538408 7.04738 0.538408 6.65685 0.928932L0.292893 7.29289ZM56 7L1 7V9L56 9V7Z" fill="currentColor"/>
-            </svg>                                             
-          </div>
-          <div class="cs_right_arrow slick-arrow">
-            <svg width="56" height="16" viewBox="0 0 56 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M55.7071 8.70711C56.0976 8.31659 56.0976 7.68342 55.7071 7.2929L49.3431 0.928937C48.9526 0.538412 48.3195 0.538412 47.9289 0.928936C47.5384 1.31946 47.5384 1.95263 47.9289 2.34315L53.5858 8L47.9289 13.6569C47.5384 14.0474 47.5384 14.6805 47.9289 15.0711C48.3195 15.4616 48.9526 15.4616 49.3431 15.0711L55.7071 8.70711ZM-8.74228e-08 9L55 9L55 7L8.74228e-08 7L-8.74228e-08 9Z" fill="currentColor"/>
-            </svg>                                              
-          </div>
-        </div>
       </div>
-      <div class="cs_height_150 cs_height_lg_80"></div>
+      <div class="cs_height_40 cs_height_lg_40"></div>
     </section>
-    <!-- End Related Rooms Section -->
+    <!-- End Rooms Section -->
 
     <!-- Start Footer -->
     <footer class="cs_footer cs_primary_bg cs_ternary_color">
